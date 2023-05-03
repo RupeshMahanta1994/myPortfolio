@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import profile from '../assets/pic.png'
-import laptop from '../assets/laptop.png'
+import one from '../assets/one.png'
+import two from '../assets/two.png'
+import three from '../assets/three.png'
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { AiOutlineMenu, AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
@@ -142,7 +144,7 @@ const Home = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #efeded;
+    background-color: #fff;
     padding: 5em 2em;
     @media (min-width: 480px){
         justify-content: center;
@@ -185,6 +187,7 @@ width: 100%;
     align-items: center;
     padding: 5em 1.5em;
     text-align: center;
+    background-color: #f0f0f0;
 
     & p{
         margin: 1em 0;
@@ -282,7 +285,7 @@ width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 4em 2em;
-    background-color: #efeded;
+    background-color: #fff;
     @media (min-width: 480px){
         padding: 5em 6em;
     }
@@ -316,11 +319,18 @@ align-items: center;
         gap: 5rem;
         width: 100%;
         margin-bottom: 8em;
+        &:nth-child(2n){
+            & img{
+                order: 2;
+            }
+        }
     }
 
     & img{
         width: 16rem;
         margin: 2em 0;
+        border: 2px solid lightgray;
+        border-radius: 0.5rem;
         @media (min-width: 480px){
         width: 50%;
     }
@@ -395,6 +405,7 @@ const Contact = styled.div`
     align-items: center;
     text-align: center;    
     padding: 6em 2em ;
+    background-color: #f0f0f0;
     
     @media (min-width: 480px){
        
@@ -578,7 +589,7 @@ function HomePage() {
                         {
                             <NavLinks1>
                                 <AnchorLink style={{ textDecoration: "none" }} href='#Home'><Links><span>Home</span></Links></AnchorLink>
-                                <AnchorLink style={{ textDecoration: "none" }} href='#AbouMe'><Links><span>Abou Me</span></Links></AnchorLink>
+                                <AnchorLink style={{ textDecoration: "none" }} href='#AbouMe'><Links><span>About Me</span></Links></AnchorLink>
                                 <AnchorLink style={{ textDecoration: "none" }} href='#Projects'><Links><span>Projects</span></Links></AnchorLink>
                                 <AnchorLink style={{ textDecoration: "none" }} href='#Contact'><Links><span>Contact</span></Links></AnchorLink>
 
@@ -588,7 +599,7 @@ function HomePage() {
                             show ? <>
                                 <NavLinks onClick={HandleClick}>
                                     <AnchorLink style={{ textDecoration: "none" }} href='#Home'><Links><span>Home</span></Links></AnchorLink>
-                                    <AnchorLink style={{ textDecoration: "none" }} href='#AbouMe'><Links><span>Abou Me</span></Links></AnchorLink>
+                                    <AnchorLink style={{ textDecoration: "none" }} href='#AbouMe'><Links><span>About Me</span></Links></AnchorLink>
                                     <AnchorLink style={{ textDecoration: "none" }} href='#Projects'><Links><span>Projects</span></Links></AnchorLink>
                                     <AnchorLink style={{ textDecoration: "none" }} href='#Contact'><Links><span>Contact</span></Links></AnchorLink>
 
@@ -691,18 +702,15 @@ function HomePage() {
                         </p>
                         <Cards>
                             <Card>
-                                <img src={laptop} alt="" />
+                                <img src={one} alt="" />
                                 <div className="CardText">
                                     <h5>cryptoChecker</h5>
                                     <p>
-                                        Dopefolio is a successful
-                                        Open-Source project that
-                                        I created which have been
-                                        featured on some of the
-                                        biggest tech sites like
-                                        CSS-Tricks, Hostinger,
-                                        etc & used by thousands
-                                        of developers globally
+                                        cryptoChecker is a Frontend
+                                        website which recevies data
+                                        from a Cryptocurrency API and
+                                        gives a list of popular Currencies.
+                                        It also provides a search Filter.
                                     </p>
                                     <a href="https://cryptochecker-theta.vercel.app/">
                                         <Button>live preview</Button>
@@ -713,42 +721,43 @@ function HomePage() {
                             </Card>
 
                             <Card>
-                                <img src={laptop} alt="" />
+                                <img src={two} alt="" />
                                 <div className="CardText">
-                                    <h5>Dopefolio</h5>
+                                    <h5>Gymate</h5>
                                     <p>
-                                        Dopefolio is a successful
-                                        Open-Source project that
-                                        I created which have been
-                                        featured on some of the
-                                        biggest tech sites like
-                                        CSS-Tricks, Hostinger,
-                                        etc & used by thousands
-                                        of developers globally
+                                        Gymate is a
+                                        Frontend project that
+                                        contains multiple pages,
+                                        some cool animations, a signUp
+                                        page.
+
                                     </p>
-                                    <Button>case study</Button>
+                                    <a href="https://gymate-b4lh.vercel.app/">
+                                        <Button>live preview</Button>
+                                    </a>
+
                                 </div>
 
                             </Card>
 
                             <Card>
-                                <img src={laptop} alt="" />
+                                <img src={three} alt="" />
                                 <div className="CardText">
-                                    <h5>Dopefolio</h5>
+                                    <h5>GoCar</h5>
                                     <p>
-                                        Dopefolio is a successful
-                                        Open-Source project that
-                                        I created which have been
-                                        featured on some of the
-                                        biggest tech sites like
-                                        CSS-Tricks, Hostinger,
-                                        etc & used by thousands
-                                        of developers globally
+                                        Gocar is multipaged Frontend
+                                        end website which shows various
+                                        cars in two catrgories. Used cars
+                                        and New cars.
                                     </p>
-                                    <Button>case study</Button>
+                                    <a href="">
+                                        <Button>live preview</Button>
+                                    </a>
                                 </div>
 
                             </Card>
+
+
 
 
                         </Cards>
