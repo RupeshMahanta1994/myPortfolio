@@ -49,7 +49,7 @@ const Navbar = styled.div`
     background-color: #efeded;
     
     @media (min-width: 480px){
-        padding:1.2em 6em;
+        padding:1.2em 8em;
     }
 
 `
@@ -60,11 +60,11 @@ const Logo = styled.div`
     justify-content: center;
 
     & img{
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
-        border: 1px solid yellow;
         object-fit: cover;
+        background-color: #FACF0F;
     }
 
     & p {
@@ -394,6 +394,7 @@ const Button = styled.button`
     font-family: 'Ubuntu';
     letter-spacing: 0.1rem;
     border-radius: 0.3rem;
+    cursor: pointer;
     @media (min-width: 480px){
         font-size: 1.2rem;
     }
@@ -700,25 +701,8 @@ function HomePage() {
                             each project containing
                             its own case study
                         </p>
+
                         <Cards>
-                            <Card>
-                                <img src={one} alt="" />
-                                <div className="CardText">
-                                    <h5>cryptoChecker</h5>
-                                    <p>
-                                        cryptoChecker is a Frontend
-                                        website which recevies data
-                                        from a Cryptocurrency API and
-                                        gives a list of popular Currencies.
-                                        It also provides a search Filter.
-                                    </p>
-                                    <a href="https://cryptochecker-theta.vercel.app/">
-                                        <Button>live preview</Button>
-                                    </a>
-
-                                </div>
-
-                            </Card>
 
                             <Card>
                                 <img src={two} alt="" />
@@ -739,6 +723,27 @@ function HomePage() {
                                 </div>
 
                             </Card>
+
+                            <Card>
+                                <img src={one} alt="" />
+                                <div className="CardText">
+                                    <h5>cryptoChecker</h5>
+                                    <p>
+                                        cryptoChecker is a Frontend
+                                        website which recevies data
+                                        from a Cryptocurrency API and
+                                        gives a list of popular Currencies.
+                                        It also provides a search Filter.
+                                    </p>
+                                    <a href="https://cryptochecker-theta.vercel.app/">
+                                        <Button>live preview</Button>
+                                    </a>
+
+                                </div>
+
+                            </Card>
+
+
 
                             <Card>
                                 <img src={three} alt="" />
@@ -795,8 +800,8 @@ function HomePage() {
                                     <AiFillLinkedin fontSize="1.6rem" color='#fff' />
                                 </a>
 
-                                <AiFillGithub fontSize="1.6rem" />
-                                <AiOutlineTwitter fontSize="1.6rem" />
+                                <AiFillGithub fontSize="1.6rem" cursor="pointer" />
+                                <AiOutlineTwitter fontSize="1.6rem" cursor="pointer" />
                             </div>
                         </div>
 
