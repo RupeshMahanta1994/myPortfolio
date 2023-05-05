@@ -718,7 +718,7 @@ function HomePage() {
 
                                     </p>
                                     <a href="https://gymate-b4lh.vercel.app/">
-                                        <Button>live <FaExternalLinkAlt /></Button>
+                                        <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>
                                     </a>
 
                                 </div>
@@ -737,7 +737,7 @@ function HomePage() {
                                         It also provides a search Filter.
                                     </p>
                                     <a href="https://cryptochecker-theta.vercel.app/">
-                                        <Button>live <FaExternalLinkAlt /></Button>
+                                        <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>
                                     </a>
 
                                 </div>
@@ -757,7 +757,7 @@ function HomePage() {
                                         and New cars.
                                     </p>
                                     <a href="">
-                                        <Button>live <FaExternalLinkAlt /></Button>
+                                        <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>
                                     </a>
                                 </div>
 
