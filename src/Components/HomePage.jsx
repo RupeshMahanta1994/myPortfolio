@@ -7,6 +7,7 @@ import three from '../assets/three.png'
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { AiOutlineMenu, AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { FaExternalLinkAlt } from "react-icons/fa"
 
 const Skills = ["HTML", "CSS", "JavaScript", "ReactJS", "ChakraUI"]
 
@@ -717,7 +718,7 @@ function HomePage() {
 
                                     </p>
                                     <a href="https://gymate-b4lh.vercel.app/">
-                                        <Button>live preview</Button>
+                                        <Button>live <FaExternalLinkAlt /></Button>
                                     </a>
 
                                 </div>
@@ -736,7 +737,7 @@ function HomePage() {
                                         It also provides a search Filter.
                                     </p>
                                     <a href="https://cryptochecker-theta.vercel.app/">
-                                        <Button>live preview</Button>
+                                        <Button>live <FaExternalLinkAlt /></Button>
                                     </a>
 
                                 </div>
@@ -756,7 +757,7 @@ function HomePage() {
                                         and New cars.
                                     </p>
                                     <a href="">
-                                        <Button>live preview</Button>
+                                        <Button>live <FaExternalLinkAlt /></Button>
                                     </a>
                                 </div>
 
