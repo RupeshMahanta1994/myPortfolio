@@ -727,6 +727,24 @@ function HomePage() {
                             </Card>
 
                             <Card>
+                                <img src={aegis} alt="" />
+                                <div className="CardText">
+                                    <h5>Aegis</h5>
+                                    <p>
+                                        Aegis is a fully responsive
+                                        website powered with Chakra UI.
+
+
+                                    </p>
+                                    <a href="https://spotlight-navy.vercel.app/">
+                                        <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>
+                                    </a>
+
+                                </div>
+
+                            </Card>
+
+                            <Card>
                                 <img src={one} alt="" />
                                 <div className="CardText">
                                     <h5>cryptoChecker</h5>
@@ -764,23 +782,7 @@ function HomePage() {
 
                             </Card>
 
-                            <Card>
-                                <img src={aegis} alt="" />
-                                <div className="CardText">
-                                    <h5>Aegis</h5>
-                                    <p>
-                                        Aegis is a fully responsive
-                                        website powered with Chakra UI.
 
-
-                                    </p>
-                                    <a href="https://spotlight-navy.vercel.app/">
-                                        <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>
-                                    </a>
-
-                                </div>
-
-                            </Card>
 
 
 
