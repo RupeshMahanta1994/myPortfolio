@@ -765,7 +765,7 @@ function HomePage() {
                             </Card>
 
                             <Card>
-                                <img src={two} alt="" />
+                                <img src={aegis} alt="" />
                                 <div className="CardText">
                                     <h5>Aegis</h5>
                                     <p>
