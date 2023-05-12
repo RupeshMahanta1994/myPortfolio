@@ -4,6 +4,7 @@ import profile from '../assets/pic.png'
 import one from '../assets/one.png'
 import two from '../assets/two.png'
 import three from '../assets/three.png'
+import aegis from '../assets/aegis.png'
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { AiOutlineMenu, AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
@@ -759,6 +760,24 @@ function HomePage() {
                                     <a href="">
                                         <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>
                                     </a>
+                                </div>
+
+                            </Card>
+
+                            <Card>
+                                <img src={two} alt="" />
+                                <div className="CardText">
+                                    <h5>Aegis</h5>
+                                    <p>
+                                        Aegis is a fully responsive
+                                        website powered with Chakra UI.
+
+
+                                    </p>
+                                    <a href="https://spotlight-navy.vercel.app/">
+                                        <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>
+                                    </a>
+
                                 </div>
 
                             </Card>
