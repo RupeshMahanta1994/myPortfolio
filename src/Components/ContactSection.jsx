@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Header = styled.div`
     font-size: 2rem;
@@ -125,7 +126,14 @@ const ContactSection = () => {
                     <input type="email" placeholder='Enter Your Email' />
                     <label htmlFor="">Message</label>
                     <textarea name="" id="" cols="30" rows="10" placeholder='Enter Your Message'></textarea>
-                    <Button>submit</Button>
+
+
+                    <AnchorLink style={{
+                        textDecoration: "none",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center"
+                    }} href='#Home'><Button>submit</Button></AnchorLink>
                 </FormDiv>
             </Contact>
         </>
