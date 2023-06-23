@@ -75,13 +75,14 @@ align-items: center;
     text-align: center;
     background-color: #efeded;
     border-radius: 0.5rem;
+    padding: 1em;
 
     @media (min-width: 480px){
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 2.5rem;
         width: 100%;
         margin-bottom: 2em;
-        padding: 3em 4em;
+        padding: 2em 3em;
         &:nth-child(2n){
             & img{
                 order: 2;
@@ -117,6 +118,12 @@ align-items: center;
             font-size: 0.9rem;
         font-weight: 300;
         line-height: 1.3rem;
+        & ul {
+            list-style: none;
+            & li {
+                margin-bottom: 0.7rem;
+            }
+        }
         
     }
 
@@ -131,10 +138,15 @@ align-items: center;
             }
 
             & p{
+                width: 100%;
                 font-size: 1.1rem;
                 font-weight: 300;
                 line-height: 1.5;
                 text-align: left;
+
+                & ul {
+                    list-style: circle;
+                }
             }
         }
 
@@ -166,11 +178,20 @@ const ProjectSection = () => {
                         <div className="CardText">
                             <h5>Gymate</h5>
                             <p>
-                                Gymate is a
-                                Frontend project that
-                                contains multiple pages,
-                                some cool animations, a signUp
-                                page.
+                                <ul>
+                                    <li>
+                                        Gymate is a responsive frontend website designed using
+                                        React, Vite, JS.
+                                    </li>
+                                    <li>
+                                        This website is aiming to provide information about gym
+                                        facilities, classes, trainers, and membership options, promoting a healthy and active lifestyle.
+                                    </li>
+                                    <li>
+                                        The UI-UX of the website is build using CSS3
+                                    </li>
+                                </ul>
+
 
                             </p>
                             <a href="https://gymate-b4lh.vercel.app/">
@@ -186,8 +207,24 @@ const ProjectSection = () => {
                         <div className="CardText">
                             <h5>Aegis</h5>
                             <p>
-                                Aegis is a fully responsive
-                                website powered with Chakra UI.
+                                <ul>
+                                    <li>
+                                        AEGIS is a modern frontend website that serves as an innovative content provider platform.
+                                    </li>
+
+                                    <li>
+                                        Our goal is to bridge the gap between content creators and their target audience by an user friendly interface
+                                    </li>
+
+                                    <li>
+                                        This website is build using Styled-Components, React and deployed using Github CI/CD pipeline to Vercel.
+                                    </li>
+                                </ul>
+
+
+
+
+
 
 
                             </p>
@@ -204,11 +241,22 @@ const ProjectSection = () => {
                         <div className="CardText">
                             <h5>cryptoChecker</h5>
                             <p>
-                                cryptoChecker is a Frontend
-                                website which recevies data
-                                from a Cryptocurrency API and
-                                gives a list of popular Currencies.
-                                It also provides a search Filter.
+                                <ul>
+                                    <li>
+                                        cryptoChecker is a single page frontend website that offers
+                                        comprehensive platform.
+                                    </li>
+                                    <li>
+                                        It provides users with a user-friendly interface that keeps
+                                        them informed about the latest market trends, prices, and
+                                        relevant data.
+                                    </li>
+                                    <li>
+                                        This is build using cryptocurrency API, React, SASS.
+                                    </li>
+                                </ul>
+
+
                             </p>
                             <a href="https://cryptochecker-theta.vercel.app/">
                                 <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>

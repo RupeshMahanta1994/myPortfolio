@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const Skills = ["HTML", "CSS", "JavaScript", "ReactJS", "ChakraUI"]
+const Skills = ["React.js", "JavaScript", "UI-UX Design",
+    "HTML5", "CSS3", "SASS", "CI/CD", "APIs", "Git", "Trello", "Jira"]
 
 const Header = styled.div`
     font-size: 2rem;
@@ -126,6 +127,7 @@ width: 100%;
 
             margin-top: 2em;
             display: flex;
+            gap: 0.9rem;
             flex-wrap: wrap;
             & span{
                 color: #666666;
@@ -169,13 +171,25 @@ function AboutMeSection() {
                             Get to Know me
                         </h4>
                         <p>
-                            I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+                            I possess a deep passion for designing visually captivating and user-friendly websites that offer dynamic
+                            experiences and effortless navigation. With a solid foundation in front-end development, my expertise
+                            lies in crafting responsive websites. I am driven to continuously explore emerging technologies in order
+                            to create valuable and innovative products.
+                            Check out some of my work in the Projects section.
                             <br />
                             <br />
-                            I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a style={{ color: "#FACF0F", fontWeight: 'bold' }} href="https://www.linkedin.com/in/rupesh-mahanta-489968b2/">Linkedin</a>  where I post useful content related to Web Development and Programming
+                            I am passionate about sharing my knowledge and
+                            experience in web development to benefit the Dev Community.
+                            Over the course of time, I have accumulated valuable insights and
+                            expertise in this field, and I take great pleasure in creating
+                            and disseminating content that can assist others. Feel free to
+                            Connect or Follow me
+                            on my <a style={{ color: "#FACF0F", fontWeight: 'bold' }} href="https://www.linkedin.com/in/rupesh-mahanta-489968b2/">Linkedin</a>  where I post useful content related to Web Development and Programming
                             <br />
                             <br />
-                            I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+                            I'm open to Job opportunities where I can contribute,
+                            learn and grow. If you have a good opportunity that matches
+                            my skills and experience then don't hesitate to contact me.
                         </p>
 
                         <AnchorLink style={{ textDecoration: "none" }} href='#Contact'><Links><Button>Contact</Button></Links></AnchorLink>
