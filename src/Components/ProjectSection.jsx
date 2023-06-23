@@ -273,10 +273,18 @@ const ProjectSection = () => {
                         <div className="CardText">
                             <h5>GoCar</h5>
                             <p>
-                                Gocar is multipaged Frontend
-                                end website which shows various
-                                cars in two catrgories. Used cars
-                                and New cars.
+                                <ul>
+                                    <li>
+                                        Gocar is multipaged Frontend
+                                        end website which shows various
+                                        cars in two catrgories.
+                                    </li>
+                                    <li>
+                                        Used cars
+                                        and New cars.
+                                    </li>
+                                </ul>
+
                             </p>
                             <a href="">
                                 <Button>live <FaExternalLinkAlt fontSize="1.1rem" /></Button>
