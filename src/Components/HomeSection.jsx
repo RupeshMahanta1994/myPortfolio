@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
-import one from "../assets/one.png";
-import two from "../assets/two.png";
-import three from "../assets/three.png";
-import aegis from "../assets/aegis.png";
 import profile from "../assets/profile.png";
 import hand from "../assets/hand.png";
 import linkedin from "../assets/linkedin.png";
@@ -55,6 +50,9 @@ const ProfilePic = styled.div`
   align-item: center;
   justify-content: center;
   position: relative;
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Shape = styled.div`
@@ -84,6 +82,10 @@ const SocialIcons = styled.div`
   flex-direction: column;
   align-item: center;
   justify-content: center;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Icons = styled.div`
@@ -105,9 +107,14 @@ const Home = styled.div`
   text-align: right;
   background-color: #fff;
   padding: 5em 2em;
-  @media (min-width: 480px) {
+  @media (max-width: 480px) {
+    width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 40rem;
+    padding: 2em 0.8em;
   }
 
   & h4 {

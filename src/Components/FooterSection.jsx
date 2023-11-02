@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Footer = styled.div`
   width: 100%;

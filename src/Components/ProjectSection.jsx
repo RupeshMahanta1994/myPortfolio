@@ -1,18 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import profile from "../assets/pic.png";
 import one from "../assets/one.png";
 import two from "../assets/two.png";
 import three from "../assets/three.png";
 import aegis from "../assets/aegis.png";
-
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import {
-  AiOutlineMenu,
-  AiFillLinkedin,
-  AiFillGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Header = styled.div`
@@ -169,7 +160,7 @@ const ProjectSection = () => {
                 <ul>
                   <li>
                     Gymate is a responsive frontend website designed using
-                    React, Vite, JS.
+                    <b> React</b>, <b>ViteJS</b>.
                   </li>
                   <li>
                     This website is aiming to provide information about gym
@@ -257,7 +248,9 @@ const ProjectSection = () => {
                     them informed about the latest market trends, prices, and
                     relevant data.
                   </li>
-                  <li>This is build using cryptocurrency API, React, SASS.</li>
+                  <li>
+                    This is build using cryptocurrency <b> API</b>, React, SASS.
+                  </li>
                 </ul>
               </p>
               <a href="https://cryptochecker-theta.vercel.app/">
